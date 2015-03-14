@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Играть в игру">
+  <SequenceDesignerModelMoniker Id="30e108d2-771b-4ac9-a142-566dd5380fef" />
+  <nestedChildShapes>
+    <lifelineShape Id="8cb9c8bc-0eff-4d83-9b02-80225fd9a842" absoluteBounds="1.104166666666667, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="6beaa3c9-03d5-4ec4-a1ff-c0041a6fa8e3" LastKnownName="игрок : Игрок" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="0edc7a3d-5782-4db4-a4d1-1a079eeb3464" absoluteBounds="0.65089015285174079, 0.6, 1.0565530276298523, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="6beaa3c9-03d5-4ec4-a1ff-c0041a6fa8e3" LastKnownName="игрок : Игрок" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="539cbd21-f078-417f-a170-f588c28392e3" absoluteBounds="1.104166666666667, 1, 0, 7">
+          <lifelineMoniker Id="6beaa3c9-03d5-4ec4-a1ff-c0041a6fa8e3" LastKnownName="игрок : Игрок" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="2074c162-9865-4aca-9783-d26698cabf57" absoluteBounds="3.3541666666666679, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="cd23eb49-d2d3-411e-a123-f6e8dfe2cfcc" LastKnownName=": Главная форма" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="321cedca-7104-4a73-a689-01474e68332e" absoluteBounds="2.8065433613459279, 0.6, 1.2452466106414795, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="cd23eb49-d2d3-411e-a123-f6e8dfe2cfcc" LastKnownName=": Главная форма" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="73222bb7-0a43-459c-a516-471ffa49b28a" absoluteBounds="3.3541666666666679, 1, 0, 7">
+          <lifelineMoniker Id="cd23eb49-d2d3-411e-a123-f6e8dfe2cfcc" LastKnownName=": Главная форма" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>

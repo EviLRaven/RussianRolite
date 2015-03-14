@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="022a9fa0-2858-47cc-990b-ae7f283bdc99" name="Компоненты системы" linkedPackageId="1c17fb10-07cf-4e1b-b450-c243210c7d84" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="69622f51-0125-4e84-9341-a799fc0ca91a">
+      <elementDefinition Id="86d91925-c0ec-47d7-a24f-f68239a1cb63" />
+      <body>Стороняя сборка(стандартный FrameWork от Microsoft)</body>
+      <annotatedElements>
+        <componentMoniker Id="938c13f0-de5f-4dd3-9956-24e7c5cd7c92" LastKnownName="EntityFramework" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="082e4b6b-6827-43a3-a6b1-1900b5f7d982">
+      <profileInstance Id="a2e4c0c9-6f4b-4a6a-b306-498c7e63358e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6494aa00-38d4-449c-b1f1-13bf3d8aa309">
+      <profileInstance Id="d686cb49-cecc-4629-9171-392d2196256a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="ddfb78ef-665f-4516-8597-dc0551b2a4b2" name="Zamochi.exe" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b33e1154-e53f-4ea3-9c76-170616472257" />
+        <suppliersInternal>
+          <dependency Id="6fcad340-b3a0-4376-a24e-ced791c3bb2e">
+            <componentMoniker Id="7d22ee38-59d2-4c04-99c9-f7d6caa9030d" LastKnownName="Gamelogic.dl" />
+            <elementDefinition Id="9983aea9-a3bd-4bd1-8771-8033bc1f6482" />
+          </dependency>
+          <dependency Id="afa06c63-884c-44d7-a31e-aa9f6a82ce5f">
+            <componentMoniker Id="938c13f0-de5f-4dd3-9956-24e7c5cd7c92" LastKnownName="EntityFramework" />
+            <elementDefinition Id="26919d7d-9fca-4e4e-8cbc-5185acd647c5" />
+          </dependency>
+          <dependency Id="abae1a33-04ee-4d4e-8cd4-e0db6b517bb1">
+            <componentMoniker Id="169edb25-9125-4c79-b08e-f055bab721d1" LastKnownName="DateLayer.dll" />
+            <elementDefinition Id="421d6873-d10f-45c5-8139-2ed5cf6d6230" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7d22ee38-59d2-4c04-99c9-f7d6caa9030d" name="Gamelogic.dl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1f225fae-29da-412d-af08-0583a854bb17" />
+        <suppliersInternal>
+          <dependency Id="b84ec9ed-260d-480b-b823-4727e7c58698">
+            <componentMoniker Id="169edb25-9125-4c79-b08e-f055bab721d1" LastKnownName="DateLayer.dll" />
+            <elementDefinition Id="3e9aa13d-a1a5-4ba1-8daf-ba93954bcc85" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="169edb25-9125-4c79-b08e-f055bab721d1" name="DateLayer.dll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8b9e368f-dd6d-41c1-95d1-9047cd77d0ab" />
+        <suppliersInternal>
+          <dependency Id="e1a9041d-8f6c-4b8d-9722-dd2c6803c241">
+            <componentMoniker Id="938c13f0-de5f-4dd3-9956-24e7c5cd7c92" LastKnownName="EntityFramework" />
+            <elementDefinition Id="0d5ac3f3-dee9-401c-94db-fca9a2d29de4" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="938c13f0-de5f-4dd3-9956-24e7c5cd7c92" name="EntityFramework" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fd800d0f-1219-4c64-8bf9-e7dd79bcd6bb" />
+        <suppliersInternal>
+          <dependency Id="203d0dd1-7aaf-4bc3-ae2e-3637444e137f">
+            <componentMoniker Id="ec281bad-7faf-43e7-8719-60a3faef600e" LastKnownName="База Данных SQL" />
+            <elementDefinition Id="ff635243-64a9-4438-9227-7fad8889958c" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ec281bad-7faf-43e7-8719-60a3faef600e" name="База Данных SQL" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="88e3fe80-8b0d-4c28-b4f4-cab1febf1221" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="1c17fb10-07cf-4e1b-b450-c243210c7d84" name="Русская рулетка 2.0">
+    <elementDefinition Id="3972d5b3-5223-405d-95c8-629ce1767ce9" />
+  </package>
+</componentModel>

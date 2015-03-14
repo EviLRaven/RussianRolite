@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="768d9b39-108d-430b-a5c8-7cd20c123ffc" name="Вариант использования" linkedPackageId="a9d70fd8-4214-47d9-b836-6e8030bef755" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="85a44ec4-92ee-4b15-9542-69e190c27179">
+      <profileInstance Id="a99c8b68-b3d0-4168-8bb1-4214fbbe5dfd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5ea52871-f822-464b-b8f5-d0d447479101">
+      <profileInstance Id="48935f7b-b105-459a-9217-b44a0653da1b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="35276bf5-080e-43e3-9704-244a7e9fc8c2" name="Игрок" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd487f83-f090-4c1d-9a7e-267b9b519d1a" />
+        <generalsInternal>
+          <generalization Id="854f86a2-be7f-401c-93e1-088c0ca2636f" isSubstitutable="false">
+            <actorMoniker Id="0df18d56-0067-47b2-9337-b641b9a2b844" LastKnownName="Пользователь" />
+            <elementDefinition Id="9fb23644-95bc-4e19-bc77-672d269f4846" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="75c711d7-f57b-46e7-a3fa-e608a6e9b091" isDerived="false" sourceEndRoleName="Игрок" targetEndRoleName="Играть в игру" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="982a5831-3305-4a54-8c05-f28a56532a79" LastKnownName="Играть в игру" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cbd5729-51af-4847-9c68-15e6bfbf1ef5" name="Игрок" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="93648605-88d7-4e8a-a859-fd6582ff96d2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9342ef1a-f547-4664-9b64-29ec95acfa0f" name="Играть в игру" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3fa3d8a5-e56e-4ab5-be65-61cf9bfd8b56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8c46a75d-d8ed-41ea-b461-dfb7b5815deb" />
+          </association>
+          <association Id="d862708c-4da8-48d8-9bef-ee3e043877e1" isDerived="false" sourceEndRoleName="Игрок" targetEndRoleName="Просмотреть результаты" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="68a6b067-fd3c-45b2-a7c5-15e29077c649" LastKnownName="Просмотреть результаты" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b85fd6d4-a451-452b-8eb5-c3bbf60fef91" name="Игрок" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6c44dabf-f6d3-4853-9d09-fa7e1000d3f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="97aec528-cc73-4dfe-8d60-931001d7af37" name="Просмотреть результаты" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c0535ffd-ea90-4dda-8618-351b7e82505d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4c747487-c818-464e-a347-5db8c7ac971a" />
+          </association>
+          <association Id="17a6d4d8-ce86-49d1-896a-8b0c6cad45c1" isDerived="false" sourceEndRoleName="Игрок" targetEndRoleName="Выход из Системы" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="60a853a1-9a20-4563-b00b-9669532586ba" LastKnownName="Выход из Системы" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="467c79a7-4aba-4f4d-8b88-384bce302bb8" name="Игрок" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="06624f76-9e34-4f4c-aa45-43a8d63019e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="213d8f72-9e35-4e11-9d56-c96b368d9739" name="Выход из Системы" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="78a9324f-9e2b-4149-a130-cbefcbbc0454" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7ec1ac3-0381-4a80-80d4-19d1482ed6e9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="94c8703b-395b-4394-aff8-40de97ad573e" name="Админ." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2980f38-4bbe-4f99-8aca-b5a8d1aea02d" />
+        <generalsInternal>
+          <generalization Id="faa2b844-38f9-4315-a5da-d7ff20223c3b" isSubstitutable="false">
+            <actorMoniker Id="0df18d56-0067-47b2-9337-b641b9a2b844" LastKnownName="Пользователь" />
+            <elementDefinition Id="21b5715f-3a4a-4195-a849-75398a026669" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="72a81557-25fc-4bf2-816d-10955a7ed801" isDerived="false" sourceEndRoleName="Админ." targetEndRoleName="Управление пользователями" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8dca2681-25aa-4a1f-aee2-fc42038e5d51" LastKnownName="Управление Игроками" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78811f9e-86d9-4a6e-a1ed-46524364ccfc" name="Админ." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="638f9cf4-1a8e-4217-ab2e-6fb8cb07b9cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b208c86-f23f-4b39-bcd1-57ff71c36294" name="Управление пользователями" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ed244d7b-952b-459f-808c-baacefcfea9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="294f3515-57f9-413f-912d-2ddb73f81995" />
+          </association>
+          <association Id="f395f263-440e-4765-8e7f-4438623aec1f" isDerived="false" sourceEndRoleName="Админ." targetEndRoleName="Управление рекордами" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b9733414-7c37-4582-998d-cecce9fa7ea4" LastKnownName="Управление рекордами" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22929924-2261-46f8-b04a-5d2964e2bdbd" name="Админ." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d7db1d54-b905-4297-92fe-4348d56ff4c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc9023d8-652e-429c-8cd7-2dd4a2e012e3" name="Управление рекордами" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="639a88df-0784-4c40-877b-4fc912ae6ea9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="efb8eaef-544b-48a5-a39e-75a630685363" />
+          </association>
+          <association Id="bff75f48-33e3-4f74-a1cc-94a442123f79" isDerived="false" sourceEndRoleName="Админ." targetEndRoleName="Выход из Системы" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0c3048b3-d064-41ee-a4d2-208f7ca9f2c8" LastKnownName="Выход из Системы" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="52a5edd5-51d1-4993-8396-554283432685" name="Админ." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a31c7011-5c22-4373-95bc-58ab8b47f7e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d25b314-74a8-4ee1-b969-332b935a2ccd" name="Выход из Системы" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="74c596fc-e552-4cfb-b5e4-46737cd4988d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3a2813ff-029d-49d6-a4a9-2fd19cb22508" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0df18d56-0067-47b2-9337-b641b9a2b844" name="Пользователь" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9ea7f5a5-4955-4743-844f-09b6a27f4ddb" />
+        <targetEnds>
+          <association Id="b1208fd9-ed23-4baf-a82e-4a4703bce86e" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="Регистрация" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b34b206f-a028-48c3-9119-520f72f6b2de" LastKnownName="Регистрация" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="468029e2-ac7d-465c-9db6-023311cc696e" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="08e94ffa-84c8-4421-90b1-bfe2acd8b6c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6ef9b4cf-9423-4a0e-8e29-ca3538bb8a88" name="Регистрация" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df61bef7-4b6a-4574-b638-b87ab5989a95" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="80928491-1627-4b04-8abb-d062f6a51249" />
+          </association>
+          <association Id="63244a07-c80e-428f-a280-c2de4dc100b8" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="Авторизация" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7d05a795-97fd-4645-8976-21838b97d9af" LastKnownName="Авторизация" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae234983-0944-42c6-b791-c3dfd44bfae4" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e385f545-5b3c-418a-a7ea-dc624f8d67a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5dfad236-f95b-4ba6-a6d2-d1d16903ba16" name="Авторизация" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e3ae8f92-79a5-441e-a5c4-27fd0a9d7f68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ecf6ecd3-4f66-4d18-ae98-d0ae08715c0e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b34b206f-a028-48c3-9119-520f72f6b2de" name="Регистрация" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2db656bd-f54d-4899-a297-5c30d74bfaae" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7d05a795-97fd-4645-8976-21838b97d9af" name="Авторизация" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe98c2d2-0af0-4ec9-8395-7059cf8e122f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="982a5831-3305-4a54-8c05-f28a56532a79" name="Играть в игру" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1af6f205-ecb0-406f-a331-deb43f166192" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="68a6b067-fd3c-45b2-a7c5-15e29077c649" name="Просмотреть результаты" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="db399ba8-87fc-421e-b4b8-f4dbb940b081" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8dca2681-25aa-4a1f-aee2-fc42038e5d51" name="Управление Игроками" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8cd31395-8e34-4655-98da-6cb5b5d9ac47" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b9733414-7c37-4582-998d-cecce9fa7ea4" name="Управление рекордами" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b3f5cf20-98c8-4f9e-aebb-e3df46f50650" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="60a853a1-9a20-4563-b00b-9669532586ba" name="Выход из Системы" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a9155c86-1afd-483b-a798-605ce8e55601" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0c3048b3-d064-41ee-a4d2-208f7ca9f2c8" name="Выход из Системы" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d69da44-ce69-49e2-9537-4856a0ec45e9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a9d70fd8-4214-47d9-b836-6e8030bef755" name="Русская рулетка 2.0">
+    <elementDefinition Id="3972d5b3-5223-405d-95c8-629ce1767ce9" />
+  </package>
+</useCaseModelRoot>

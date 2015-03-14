@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Русская рулетка 2.0", "Русская рулетка 2.0\Русская рулетка 2.0.modelproj", "{B6DC81E4-7C3F-4165-B7AB-7E7375362176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateLayer", "DateLayer\DateLayer.csproj", "{B785AD21-22D8-4DDF-870B-5D0DD8634148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KillShot", "KillShot\KillShot.csproj", "{A23A9F52-99E0-4EAB-ABF7-F5343349774C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B785AD21-22D8-4DDF-870B-5D0DD8634148} = {B785AD21-22D8-4DDF-870B-5D0DD8634148}
+		{1A188642-75C4-4E13-80AA-4500279EF4FE} = {1A188642-75C4-4E13-80AA-4500279EF4FE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogic", "GameLogic\GameLogic.csproj", "{1A188642-75C4-4E13-80AA-4500279EF4FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B785AD21-22D8-4DDF-870B-5D0DD8634148} = {B785AD21-22D8-4DDF-870B-5D0DD8634148}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6DC81E4-7C3F-4165-B7AB-7E7375362176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6DC81E4-7C3F-4165-B7AB-7E7375362176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6DC81E4-7C3F-4165-B7AB-7E7375362176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6DC81E4-7C3F-4165-B7AB-7E7375362176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B785AD21-22D8-4DDF-870B-5D0DD8634148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B785AD21-22D8-4DDF-870B-5D0DD8634148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B785AD21-22D8-4DDF-870B-5D0DD8634148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B785AD21-22D8-4DDF-870B-5D0DD8634148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23A9F52-99E0-4EAB-ABF7-F5343349774C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23A9F52-99E0-4EAB-ABF7-F5343349774C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23A9F52-99E0-4EAB-ABF7-F5343349774C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23A9F52-99E0-4EAB-ABF7-F5343349774C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A188642-75C4-4E13-80AA-4500279EF4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A188642-75C4-4E13-80AA-4500279EF4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A188642-75C4-4E13-80AA-4500279EF4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A188642-75C4-4E13-80AA-4500279EF4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

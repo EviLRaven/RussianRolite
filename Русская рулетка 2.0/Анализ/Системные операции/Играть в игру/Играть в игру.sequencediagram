@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="30e108d2-771b-4ac9-a142-566dd5380fef" name="Играть в игру" linkedPackageId="4a990288-3c0d-40c9-a2a0-4a07e354c221" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="bd77ce30-53d7-4d89-a1d6-12258f553744">
+      <profileInstance Id="7a2d5a2a-5002-4429-99f3-c004c414ebc0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="46a567da-de25-4361-8221-c121a3c22356">
+      <profileInstance Id="12983c06-e535-46b3-a6a7-497e40ada47e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="1ce4fe0d-6764-43c2-9bf0-7363826dd173" name="Играть в игру" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="df54b1ae-8df1-4da5-a0b1-08054d39c3fe" />
+        <lifelines>
+          <lifeline Id="6beaa3c9-03d5-4ec4-a1ff-c0041a6fa8e3" name="игрок : Игрок" isActor="true" lifelineDisplayName="игрок : Игрок">
+            <elementDefinition Id="1733eb22-13db-43a9-8f8e-d784b98c7461" />
+            <represents>
+              <propertyMoniker Id="ff4d8ee5-28c6-494a-9a52-3a384eef80ef" />
+            </represents>
+          </lifeline>
+          <lifeline Id="cd23eb49-d2d3-411e-a123-f6e8dfe2cfcc" name=": Главная форма" isActor="false" lifelineDisplayName=": Главная форма">
+            <elementDefinition Id="4a867dda-63cd-4746-bed7-dbfdc51d0859" />
+            <represents>
+              <propertyMoniker Id="62046d70-1ee0-4dd4-9cb5-db1ebb894735" />
+            </represents>
+          </lifeline>
+        </lifelines>
+        <ownedAttributesInternal>
+          <property Id="ff4d8ee5-28c6-494a-9a52-3a384eef80ef" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f0d1283-c1dc-40f6-845f-22f83146f02d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0772f1c3-6e8d-4c01-a2b1-ec69da2e97cc" LastKnownName="Игрок" />
+            </type_NamedElement>
+          </property>
+          <property Id="62046d70-1ee0-4dd4-9cb5-db1ebb894735" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1511cdf4-fc99-4410-8964-891e3501a041" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="539b36f4-da3d-46b0-a657-a201c69aba63" LastKnownName="Главная форма" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0772f1c3-6e8d-4c01-a2b1-ec69da2e97cc" name="Игрок" isAbstract="false" isLeaf="false" cachedFullName="Русская рулетка 2.0::Игрок">
+        <elementDefinition Id="bd487f83-f090-4c1d-9a7e-267b9b519d1a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="539b36f4-da3d-46b0-a657-a201c69aba63" name="Главная форма" isAbstract="false" isLeaf="false" cachedFullName="Русская рулетка 2.0::Главная форма">
+        <elementDefinition Id="ef7a4cfb-6ffd-47d4-b502-92325e836d3a" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="4a990288-3c0d-40c9-a2a0-4a07e354c221" name="Русская рулетка 2.0">
+    <elementDefinition Id="3972d5b3-5223-405d-95c8-629ce1767ce9" />
+  </package>
+</SequenceDesignerModel>

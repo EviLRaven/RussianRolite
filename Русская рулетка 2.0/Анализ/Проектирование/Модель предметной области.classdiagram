@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="f886c5a2-b317-40e5-b6a0-49f7a45c8a4c" name="Модель предметной области" linkedPackageId="fcfbdd31-8646-4dbd-84cb-dbd05e946407" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="11016218-f6d6-4933-a3a2-de005d9cbf51">
+      <profileInstance Id="298ce9db-43f7-416d-b703-5ba642e911e1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="df9cb595-fa4e-47c4-87c7-a5fb632566cd">
+      <profileInstance Id="a9f8d5bd-8734-49fd-901a-01a07671e9c0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fbe6e646-f49c-43bd-ae04-6a0aade8f131" name="Русская рулетка" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2c3fb26e-0c7f-47dd-b57b-f1495d4e39e7" />
+        <targetEnds>
+          <association Id="a38a937f-8ab1-4db4-9287-66911ae4b0c0" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Играет в" isAbstract="false">
+            <classMoniker Id="8045b94f-f891-43a5-b487-2b33f8652f3c" LastKnownName="Игрок1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fdfb7454-e9df-46fb-96cb-de287e13b8db" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="a4166ad7-e851-4d0c-b76f-3cf3098ef0b8" name="Lower" value="1">
+                      <elementDefinition Id="9219b840-76de-4f80-8766-a3fd27534687" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d541fed0-d444-49f2-86c3-22f9c2affb0c" name="Upper" value="1">
+                      <elementDefinition Id="25b8e0f8-0ba8-417b-ac46-5a695624edb0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5e821fd5-5281-4490-bcd6-caa63df8f14c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d44fd5a5-295f-4b87-8a78-26af6e33a996" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="030c0efc-2ccb-475e-a558-a644124919ea" name="Lower" value="1">
+                      <elementDefinition Id="8ee0b938-51f7-4a64-a484-7481850fe7ee" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1ffb4caa-7054-4a62-8f8c-f1a25d277134" name="Upper" value="1">
+                      <elementDefinition Id="b9558146-4593-4420-a65b-134a49c7e77a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="93e988ba-037a-4ead-bbe5-d3148deb54fe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="13f36887-5904-4f0c-8ebf-294c2ccb11b6" />
+          </association>
+          <association Id="52359141-c39e-42a6-aa55-66a6524b972f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Содержит" isAbstract="false">
+            <classMoniker Id="aee06a37-fdd6-498d-a1f5-5b7bde8789a6" LastKnownName="Таблица рекордов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59dc2069-814d-4dca-b5a1-4ea304313262" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ac2719b0-5be9-4c45-abb1-8435d912c3cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ddd8313f-5e61-4845-82ae-e0765d2f545d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0445aa2e-9aec-48ff-bbc8-e5b96fcbb385" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3f28edc-c280-464f-8154-49e170b12ef8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8045b94f-f891-43a5-b487-2b33f8652f3c" name="Игрок1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="80ab3718-51e8-4f02-b89b-cbf03078c104" />
+        <targetEnds>
+          <association Id="d7c17d0d-257b-4068-a1d1-787578b28df6" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Стреляет в" isAbstract="false">
+            <classMoniker Id="a240535f-2b62-4ece-adba-3ad5859bbe49" LastKnownName="Пистолет" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0de06045-f7c7-4ac3-8bd4-9589893fcf54" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a4e8524d-064d-40a4-8e3d-7d12cd2ba5dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="954237af-8526-4c3e-8518-09bba377cf54" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="79990f5f-481d-43f9-a63d-eaae2c64f2c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="efb812c6-b943-403b-8b48-315ae85c0cc5" />
+          </association>
+          <association Id="f8916194-a6fe-46e8-80e8-6ed0f4f6b1e2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Входит в" isAbstract="false">
+            <classMoniker Id="aee06a37-fdd6-498d-a1f5-5b7bde8789a6" LastKnownName="Таблица рекордов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c5197aa-f256-417e-860e-bde7322f9c56" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="75d1184b-993e-4300-b4ec-5bc2678c7b6c" name="Lower" value="*">
+                      <elementDefinition Id="941a627b-8e1f-452c-bb30-98d8f76f533a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="68f0d584-761f-4065-a675-c7a917056e98" name="Upper" value="*">
+                      <elementDefinition Id="bc196c6e-75df-4395-8ad5-a2e5825c0f9e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="69a87b90-8c5b-4117-8687-273929e93ede" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d47fadc-a466-44bb-9ccd-41a42806504c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a67cf8c3-be53-4f07-b4b7-8319a5c2144b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="10dd58d1-72d7-4bbf-b79d-697bf49ff05e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="bdcf3ad4-4654-4b0e-9970-c2f16f5d4b8b" name="Имя" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a50ea49-6c9b-4de4-8f5f-9f088153c11b" />
+          </property>
+          <property Id="fa862a7f-65d4-4efa-baf7-6529da1edaa9" name="Очки" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a5529af6-22cd-4d93-88d4-4f5bbf23045d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a240535f-2b62-4ece-adba-3ad5859bbe49" name="Пистолет" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="38a4b0ad-13ca-401d-8414-b596c8c56b7e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aee06a37-fdd6-498d-a1f5-5b7bde8789a6" name="Таблица рекордов" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="af9254b5-f594-42d3-9e2e-eb65ee4490e0" />
+        <ownedAttributesInternal>
+          <property Id="c426b303-82cc-4203-b550-72bcbefb4c7f" name="Имя игрока" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a280eae5-6b18-4678-b671-1fe80be2c911" />
+          </property>
+          <property Id="482cc9b0-c770-4fa8-8f20-e5ad9e268f49" name="Очки" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a52c0cec-4fcc-4916-b3fc-b8cde19d60df" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bb54ae71-f5cc-47cf-873e-1e2a67ba2c8e" name="Админ" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e2fdf3ea-e69d-49fd-ac78-3e2243489581" />
+        <targetEnds>
+          <association Id="44d0cf57-b1bc-4aa2-8a00-bf5850a669c0" isDerived="false" sourceEndRoleName="Админ" targetEndRoleName="Игрок1" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8045b94f-f891-43a5-b487-2b33f8652f3c" LastKnownName="Игрок1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f45aad58-749b-4f23-8311-10965451aa3d" name="Админ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="94072117-7e36-4d12-900e-60be9b6fff7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c51d876-31ce-45a1-b2c6-adee3537017c" name="Игрок1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="762987cf-649b-4ca3-b77e-68e28d71d2df" name="Lower" value="*">
+                      <elementDefinition Id="b0ed7069-22a1-4526-b17f-280b4f99a880" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9066e60d-0d22-47c8-b92c-774db09fa327" name="Upper" value="*">
+                      <elementDefinition Id="17e32742-3581-4068-85c3-eb62ba963752" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="329dcf13-9d5a-4459-8903-932a4012c6aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="73414115-7684-46c1-a8d5-16ff9f1bfe41" />
+          </association>
+          <association Id="d11262e6-4ef7-492d-968a-335fa2740ee1" isDerived="false" sourceEndRoleName="Админ" targetEndRoleName="Таблица рекордов" isLeaf="false" isAbstract="false">
+            <classMoniker Id="aee06a37-fdd6-498d-a1f5-5b7bde8789a6" LastKnownName="Таблица рекордов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6027386-e453-4e2f-89df-eaccc46f2ece" name="Админ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76465b48-0111-4f2b-a5dc-adceb622726a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e02c7d2-398c-45b9-927a-ec36a76b02c8" name="Таблица рекордов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="de99060e-a921-40ee-85d4-bda91072b66d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4fba2334-8127-4c9a-81b0-ec0c36355ddd" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ecea2db0-8e23-4893-8b20-fb1a47a5e681" name="Имя" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6fa45435-9824-489e-b4ba-811fb158e632" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="fcfbdd31-8646-4dbd-84cb-dbd05e946407" name="Русская рулетка 2.0">
+    <elementDefinition Id="3972d5b3-5223-405d-95c8-629ce1767ce9" />
+  </package>
+</logicalClassDesignerModel>

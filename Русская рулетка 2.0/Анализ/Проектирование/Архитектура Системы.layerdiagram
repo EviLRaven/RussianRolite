@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b46bba8c-a475-49a6-8cec-cd1c5b01d353" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="00b71210-0502-4b0f-85a6-76c4571d0333" name="Сервер Баз данных">
+      <childLayers>
+        <layer Id="c6e26c93-703b-485f-ae06-2ea946c661c3" name="MS SQL Server">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="35e27d52-be58-441c-abfa-28c674a0171a" direction="Bidirectional">
+              <layerMoniker Id="1cc61d46-65bc-4296-b36b-9e3ad739ac0b" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="1cc61d46-65bc-4296-b36b-9e3ad739ac0b" name="База данных" />
+      </childLayers>
+    </layer>
+    <layer Id="83450eff-4391-46fa-a9fa-98ed14f3fd0a" name="Клиент">
+      <childLayers>
+        <layer Id="86ad6bb9-2632-4213-bc4f-3288c2e20031" name="Пользовательский интерфейс (UI)">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="dbc01a16-6462-4e44-8e21-633edb701212" direction="Forward">
+              <layerMoniker Id="ca5a55cb-a96e-4105-83a9-ae411902c89e" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="9a6f87b2-3a5e-4f97-865a-e058c28a927a" direction="Forward">
+              <layerMoniker Id="b1cda6fc-d7ce-446c-97ce-621109e268d3" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="3999ddca-32e4-4144-9536-c7fec5cf0f34" name="Killshot">
+              <ArtifactNode Label="Killshot" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/visual studio 2013/Projects/Русская рулетка/Killshot/Killshot.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=Killshot)" Label="Killshot.exe" Category="CodeSchema_Assembly">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="ca5a55cb-a96e-4105-83a9-ae411902c89e" name="Бизнесс-логика (BL)">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="c7bf5cd0-3077-4aae-832b-eaf1e827c2c4" direction="Forward">
+              <layerMoniker Id="b1cda6fc-d7ce-446c-97ce-621109e268d3" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="aca9e9e9-649f-4ad8-84a1-9c0f14c44464" name="GameLogic">
+              <ArtifactNode Label="GameLogic" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/Русская рулетка/GameLogic/GameLogic.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=GameLogic)" Label="GameLogic.dll" Category="CodeSchema_Assembly">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="ba0d77e5-eb16-44b5-9d51-de56bd64c5bc" name="Доступ к данным (DL)">
+          <childLayers>
+            <layer Id="b1cda6fc-d7ce-446c-97ce-621109e268d3" name="Библеотека репоситариев">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="d6fedf41-410f-4b0c-8865-759781b38064" direction="Bidirectional">
+                  <layerMoniker Id="f9da8c88-3af9-4a29-be70-8aa806aa3b11" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+              <references>
+                <reference Id="d7e79b39-8066-475f-94be-18f601fb1304" name="DateLayer">
+                  <ArtifactNode Label="DateLayer" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/visual studio 2013/Projects/Русская рулетка/Datelayer/Datelayer.csproj&quot;)" />
+                  <ExpandedNode Id="(Assembly=Datelayer)" Label="Datelayer.dll" Category="CodeSchema_Assembly">
+                    <LinkCategory Ref="Produces" />
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="f9da8c88-3af9-4a29-be70-8aa806aa3b11" name="Entity Framework">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="499c5f7a-ed24-4086-b813-2e504304c5f3" direction="Bidirectional">
+                  <layerMoniker Id="c6e26c93-703b-485f-ae06-2ea946c661c3" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+            </layer>
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

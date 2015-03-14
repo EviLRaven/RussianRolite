@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b6dc81e4-7c3f-4165-b7ab-7e7375362176}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Русская рулетка 2.0</Name>
+    <RootNamespace>Русская рулетка 2.0</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="ModelDefinition\Package_1915.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1929.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <EmbeddedResource Include="Анализ\Авторизация\Авторизация.sequencediagram">
+      <SubType>Content</SubType>
+    </EmbeddedResource>
+    <Content Include="Анализ\Авторизация\Авторизация.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Авторизация\Авторизация.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Варианты использования\Авторизация.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Варианты использования\Вариант использования.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Варианты использования\Вариант использования.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Варианты использования\Вариант использования.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Варианты использования\Играть в игру.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Варианты использования\Просмотреть результаты.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Варианты использования\Регистрация.docx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Проектирование\DateLayer.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Проектирование\DateLayer.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Проектирование\DateLayer.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Проектирование\GameLogic.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Проектирование\GameLogic.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Проектирование\GameLogic.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Проектирование\Компоненты системы.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Проектирование\Компоненты системы.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Проектирование\Компоненты системы.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Проектирование\Модель предметной области.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Проектирование\Модель предметной области.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Проектирование\Модель предметной области.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Просмотреть результаты\Показать результаты.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Просмотреть результаты\Показать результаты.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Просмотреть результаты\Показать результаты.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Регистрация\Регистрация.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Регистрация\Регистрация.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Регистрация\Регистрация.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Системные операции\Играть в игру%28игрок жив%29.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Системные операции\Играть в игру%28игрок жив%29.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Системные операции\Играть в игру(игрок жив).sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Системные операции\Играть в игру%28игрок мертв%29.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Системные операции\Играть в игру%28игрок мертв%29.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Системные операции\Играть в игру(игрок мертв).sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Системные операции\Играть в игру\Играть в игру.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Системные операции\Играть в игру\Играть в игру.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Системные операции\Играть в игру\Играть в игру.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Системные операции\Просмотреть результаты.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Системные операции\Просмотреть результаты.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Системные операции\Просмотреть результаты.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Управление Пользователями\Удаление.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Управление Пользователями\Удаление.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Управление Пользователями\Удаление.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Управление Пользователями\Изменение.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Управление Пользователями\Изменение.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Управление Пользователями\Изменение.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Управление Пользователями\Добавление.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Управление Пользователями\Добавление.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Управление Пользователями\Добавление.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Управление Рекордами\Добавление.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Управление Рекордами\Добавление.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Управление Рекордами\Добавление.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Управление Рекордами\Изменение.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Управление Рекордами\Изменение.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Управление Рекордами\Изменение.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Анализ\Управление Рекордами\Удалить.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Анализ\Управление Рекордами\Удалить.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Управление Рекордами\Удалить.sequencediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Русская рулетка 2.0.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Анализ" />
+    <Folder Include="Анализ\Варианты использования" />
+    <Folder Include="Анализ\Авторизация" />
+    <Folder Include="Анализ\Регистрация" />
+    <Folder Include="Анализ\Управление Рекордами" />
+    <Folder Include="Анализ\Управление Пользователями" />
+    <Folder Include="Анализ\Просмотреть результаты" />
+    <Folder Include="Анализ\Проектирование" />
+    <Folder Include="Анализ\Системные операции" />
+    <Folder Include="Анализ\Системные операции\Играть в игру" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Анализ\Проектирование\Архитектура Системы.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Анализ\Проектирование\Архитектура Системы.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Проектирование\Архитектура Системы.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Анализ\Проектирование\Архитектура Системы.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Анализ\Проектирование\Архитектура Системы.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>
